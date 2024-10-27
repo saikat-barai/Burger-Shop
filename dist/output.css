@@ -684,6 +684,10 @@ section{
   margin-left: auto;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -841,6 +845,11 @@ section{
   border-color: rgb(255 204 0 / var(--tw-border-opacity));
 }
 
+.bg-blackColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-greenColor{
   --tw-bg-opacity: 1;
   background-color: rgb(0 121 55 / var(--tw-bg-opacity));
@@ -866,6 +875,10 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -879,6 +892,11 @@ section{
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-3{
@@ -899,6 +917,16 @@ section{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-7{
@@ -941,6 +969,11 @@ section{
   line-height: 1.5rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -974,6 +1007,11 @@ section{
 .shadow-slate-600{
   --tw-shadow-color: #475569;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .duration-200{
@@ -1083,9 +1121,26 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-primaryColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 10 94 / var(--tw-bg-opacity));
+}
+
 .hover\:text-secendaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-75:hover{
+  opacity: 0.75;
+}
+
+.hover\:opacity-50:hover{
+  opacity: 0.5;
+}
+
+.hover\:opacity-65:hover{
+  opacity: 0.65;
 }
 
 @media (min-width: 768px){
@@ -1126,6 +1181,10 @@ section{
     width: 100%;
   }
 
+  .md\:flex-1{
+    flex: 1 1 0%;
+  }
+
   .md\:basis-1\/2{
     flex-basis: 50%;
   }
@@ -1140,6 +1199,10 @@ section{
 
   .md\:flex-row-reverse{
     flex-direction: row-reverse;
+  }
+
+  .md\:items-center{
+    align-items: center;
   }
 
   .md\:justify-start{
