@@ -556,6 +556,10 @@ video {
   display: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   --tw-bg-opacity: 1;
   background-color: rgb(1 10 94 / var(--tw-bg-opacity));
@@ -651,6 +655,10 @@ section{
   left: -1rem;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -659,12 +667,20 @@ section{
   right: 1rem;
 }
 
+.right-6{
+  right: 1.5rem;
+}
+
 .top-0{
   top: 0px;
 }
 
 .top-\[0\.7rem\]{
   top: 0.7rem;
+}
+
+.-bottom-1\/2{
+  bottom: -50%;
 }
 
 .z-50{
@@ -856,19 +872,14 @@ section{
   border-top-width: 1px;
 }
 
-.border-primaryColor{
+.border-primaryColorLight{
   --tw-border-opacity: 1;
-  border-color: rgb(1 10 94 / var(--tw-border-opacity));
+  border-color: rgb(1 13 120 / var(--tw-border-opacity));
 }
 
 .border-secendaryColor{
   --tw-border-opacity: 1;
   border-color: rgb(255 204 0 / var(--tw-border-opacity));
-}
-
-.border-primaryColorLight{
-  --tw-border-opacity: 1;
-  border-color: rgb(1 13 120 / var(--tw-border-opacity));
 }
 
 .bg-blackColor{
@@ -909,6 +920,11 @@ section{
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6{
@@ -1040,6 +1056,12 @@ section{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-slate-600{
   --tw-shadow-color: #475569;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1144,6 +1166,11 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:-translate-y-1:hover{
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover{
@@ -1294,5 +1321,10 @@ section{
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }

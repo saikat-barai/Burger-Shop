@@ -59,3 +59,31 @@ tabs.forEach(tab => {
     }) 
 
 })
+
+
+// ----------scroup btn script-----------
+const scrollup = () =>{
+    const scrollupbtn = document.getElementById('scroll-up');
+    if (this.scrollY >= 250) {
+        scrollupbtn.classList.remove('-bottom-1/2');
+        scrollupbtn.classList.add('bottom-4');
+    }
+    else{
+        scrollupbtn.classList.add('-bottom-1/2');
+        scrollupbtn.classList.remove('bottom-4');
+    }
+}
+window.addEventListener('scroll', scrollup)
+
+
+// ---------------header scroll script------------
+const headerScroll = () => {
+    const header = document.getElementById('header');
+    if (this.scrollY >50) {
+        header.classList.add('border-b', 'border-secendaryColor');
+    }
+    else{
+        header.classList.remove('border-b', 'border-secendaryColor');
+    }
+}
+window.addEventListener('scroll', headerScroll);
