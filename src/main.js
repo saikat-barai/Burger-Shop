@@ -87,3 +87,38 @@ const headerScroll = () => {
     }
 }
 window.addEventListener('scroll', headerScroll);
+
+
+// --------------dark mood and light mood script----------------
+const html = document.querySelector('html');
+const themeToggole = document.getElementById('theme-toggole');
+
+
+if (localStorage.getItem('mood')=='dark') {
+    html.classList.add('dark');
+    themeToggole.classList.replace('ri-moon-line', 'ri-sun-line');
+    localStorage.setItem('mood', 'dark');
+    
+} else {
+    
+}
+themeToggole.addEventListener('click', (e) =>{
+    if (localStorage.getItem('mood')=='light') {
+        darkMode();
+    } else {
+        lightMode();
+    }
+    
+})
+
+function lightMode(){
+    html.classList.remove('dark');
+    themeToggole.classList.replace('ri-sun-line', 'ri-moon-line');
+    localStorage.setItem('mood', 'light');
+}
+
+function darkMode(){
+    html.classList.add('dark');
+    themeToggole.classList.replace('ri-moon-line', 'ri-sun-line');
+    localStorage.setItem('mood', 'dark');
+}

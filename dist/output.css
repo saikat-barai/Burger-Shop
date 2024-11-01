@@ -569,6 +569,11 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+body:where(.dark, .dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 section{
   padding-top: 2.5rem;
   padding-bottom: 1rem;
@@ -647,6 +652,10 @@ section{
   position: relative;
 }
 
+.-bottom-1\/2{
+  bottom: -50%;
+}
+
 .-bottom-4{
   bottom: -1rem;
 }
@@ -677,10 +686,6 @@ section{
 
 .top-\[0\.7rem\]{
   top: 0.7rem;
-}
-
-.-bottom-1\/2{
-  bottom: -50%;
 }
 
 .z-50{
@@ -1326,5 +1331,37 @@ section{
   .lg\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+}
+
+.dark\:border-darkColorLight:where(.dark, .dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
+}
+
+.dark\:bg-blackColor:where(.dark, .dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-darkColorLight:where(.dark, .dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-darkColor:where(.dark, .dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:dark\:bg-darkColorLight:where(.dark, .dark *){
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  }
+
+  .md\:dark\:bg-darkColor:where(.dark, .dark *){
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
 }
